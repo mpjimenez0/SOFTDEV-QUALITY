@@ -22,7 +22,8 @@
 		"2amigos/yii2-google-places-library": "*",
         "kartik-v/yii2-widget-datepicker": "@dev",
         "philippfrenzel/yii2fullcalendar":"*",
-        "yii2mod/yii2-google-maps-markers": "*"
+        "yii2mod/yii2-google-maps-markers": "*",
+        "reportico/yii2-reportico": "dev-master"
 
     },
     "require-dev": {

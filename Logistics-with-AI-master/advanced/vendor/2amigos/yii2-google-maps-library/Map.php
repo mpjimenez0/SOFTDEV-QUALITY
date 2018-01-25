@@ -64,7 +64,7 @@ use yii\helpers\ArrayHelper;
  * should not appear (e.g. a non-Earth map type).
  * @property [\doamigos\maps\controls\StreetViewControlOptions] streetViewControlOptions The initial display options
  * for the Street View Pegman control.
- * @property array styles Styles to apply to each of the default map types. Note that for Satellite/Hybrid and Terrain
+ * @property string styles Styles to apply to each of the default map types. Note that for Satellite/Hybrid and Terrain
  * modes, these styles will only apply to labels and geometry.
  * @property int tilt Controls the automatic switching behavior for the angle of incidence of the map. The only allowed
  * values are 0 and 45. The value 0 causes the map to always use a 0° overhead view regardless of the zoom level and
@@ -87,11 +87,11 @@ class Map extends ObjectAbstract
     /**
      * @var int the width in pixels or percent of the container holding the map.
      */
-    public $width = 1300;
+    public $width = 512;
     /**
      * @var int the height in pixels or percent of the container holding the map.
      */
-    public $height = 670;
+    public $height = 512;
     /**
      * @var array the HTML attributes for the layer that will render the map.
      */
@@ -365,7 +365,7 @@ class Map extends ObjectAbstract
     {
         $view = Yii::$app->getView();
         MapAsset::register($view);
-
+        $this->getPlugins()->registerAssetBundles($view);
         $view->registerJs($this->getJs(), $position);
     }
 
@@ -426,7 +426,7 @@ class Map extends ObjectAbstract
 
         $js = ArrayHelper::merge($js, $this->_js);
         $js[] = "};";
-        $js[] = "google.maps.event.addDomListener(window, 'load', initialize);";
+        $js[] = "initialize();";
         $js[] = "})();";
 
         return implode("\n", $js);
@@ -461,4 +461,4 @@ class Map extends ObjectAbstract
     {
         return $this->getPlugins()->remove($plugin);
     }
-} 
+}

@@ -4,15 +4,11 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-/**
- * @copyright Copyright (c) 2014 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
- */
 namespace dosamigos\google\maps;
 
+use Exception;
 use Yii;
-use yii\base\Object;
+use yii\base\BaseObject;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Client as HttpClient;
 
@@ -26,17 +22,12 @@ use GuzzleHttp\Client as HttpClient;
  * @link http://www.2amigos.us/
  * @package dosamigos\google\maps
  */
-abstract class ClientAbstract extends Object
+abstract class ClientAbstract extends BaseObject
 {
     /**
      * @var string response format. Can be json or xml.
      */
     public $format = 'json';
-    /**
-     * @var string your API key. To configure please, add `googleMapsApiKey` parameter to your application configuration
-     * file with the value of your API key. To get yours, please visit https://code.google.com/apis/console/.
-     */
-    public static $key;
     /**
      * @var array the request parameters
      */
@@ -57,7 +48,20 @@ abstract class ClientAbstract extends Object
      */
     public function init()
     {
-        $this->params['key'] = @Yii::$app->params['googleMapsApiKey'] ? : null;
+        /** @var MapAsset|null $mapBundle */
+        $mapBundle = @Yii::$app->getAssetManager()->getBundle(MapAsset::className());
+        if ($mapBundle) {
+            $this->params = array_merge($this->params, $mapBundle->options);
+        }
+
+        /** BACKWARD COMPATIBILITY */
+        if (!isset($this->params['key']) || !$this->params['key']) {
+            $this->params['key'] = @Yii::$app->params['googleMapsApiKey'] ? : null;
+        }
+
+        if (!$this->params['key']) {
+            throw new Exception("Invalid configuration - missing Google API key! Configure MapAsset bundle in assetManager");
+        }
     }
 
     /**
@@ -75,8 +79,8 @@ abstract class ClientAbstract extends Object
                 ->get($this->getUrl(), ['query' => $params], $options);
 
             return $this->format == 'json'
-                ? $response->json()
-                : $response->xml();
+                ? json_decode($response->getBody())
+                : simplexml_load_string($response->getBody());
 
         } catch (RequestException $e) {
             return null;
@@ -94,4 +98,4 @@ abstract class ClientAbstract extends Object
         }
         return $this->_guzzle;
     }
-} 
+}
