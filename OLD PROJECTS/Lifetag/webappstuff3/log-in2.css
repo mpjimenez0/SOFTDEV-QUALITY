@@ -1,0 +1,53 @@
+body{font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url("bokeh.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;}
+div.topBar{
+background-color: #55b5ae;
+	position:relative;
+	width: 100%;
+}
+div.welcome{
+background-color: #d2d1cd;
+border-radius: 25px;
+padding-left: 25px;
+  position:relative;
+  top:50px;
+  margin-left:-600px;
+  left:50%;	
+  width: 400px;
+  opacity: 0.6;
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+}
+
+div.register{
+position: relative;
+float: left;
+top: -250px;
+margin-left: 800px;
+  width: 350px;
+  height: 200px;
+  
+}
+
+div.InsideReg{
+margin-top:-90px;
+background-color: #d2d1cd;
+margin-left: 25px;
+opacity: 0.5;
+width: 400px;
+height: 200px;
+font-family: Copperplate,Copperplate Gothic Light,fantasy;
+font-color: #000000;
+}
+
+.ribbon{
+margin-top:-10px
+}
+
+h3{
+position: relative;
+bottom: 20px;
+color: #ffffff;
+}
