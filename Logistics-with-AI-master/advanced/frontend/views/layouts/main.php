@@ -33,7 +33,7 @@ AppAsset::register($this);
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>L</b>M</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Logistics </b></span>
+            <span class="logo-lg"><b>Logisticss </b></span>
         </a>
 
         <nav class="navbar navbar-static-top">
