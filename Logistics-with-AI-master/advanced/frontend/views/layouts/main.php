@@ -162,7 +162,19 @@ AppAsset::register($this);
 
                                 <p>
                                     <b></b>  <br>
-                                    <?php echo Yii::$app->user->identity->user_type; ?>
+                                    <?php if(Yii::$app->user->identity->user_type == 1){
+                                        echo "Volunteer User";
+                                    }else if(Yii::$app->user->identity->user_type == 2){
+                                        echo "Super User";
+                                    }else if(Yii::$app->user->identity->user_type == 3){
+                                        echo "Barangay User";
+                                    }else if(Yii::$app->user->identity->user_type == 4){
+                                        echo "City/Municipal User";
+                                    }else if(Yii::$app->user->identity->user_type == 5){
+                                        echo "Regional User";
+                                    }else if(Yii::$app->user->identity->user_type == 6){
+                                        echo "Provincial User";
+                                    }; ?>
                                     <small>Member since April 1, 2017</small>
                                 </p>
                             </li>
@@ -234,7 +246,7 @@ AppAsset::register($this);
                             <li><a href="index.php?r=user/externaladmin"><i class="fa fa-circle-o"></i> External Users </a></li>
                         </ul>
                        </li>
-                    
+
                     <li>
                         <a href="index.php?r=warehouse">
                             <i class="fa fa-building"></i> <span>Warehouse</span>
