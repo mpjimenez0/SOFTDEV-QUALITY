@@ -260,7 +260,7 @@ AppAsset::register($this);
                             '<li><a href="index.php?r=supply/expirationreport"><i class="fa fa-circle-o"></i> Expiration Report</a></li>';
                         ?>
                         <li><a href="index.php?r=request/calendar"><i class="fa fa-circle-o"></i> Calendar</a></li>
-                        <li><a href="/reportico"><i class="fa fa-circle-o"></i> Generate Reports</a></li>
+                        <li><a href="/reportico"><i class="fa fa-circle-o"></i> Generate Report</a></li>
 
                     </ul>
                 </li>
