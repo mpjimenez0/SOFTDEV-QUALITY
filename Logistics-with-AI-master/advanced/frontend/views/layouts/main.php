@@ -33,7 +33,7 @@ AppAsset::register($this);
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>L</b>M</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Logisticss </b></span>
+            <span class="logo-lg"><b>Logistics </b></span>
         </a>
 
         <nav class="navbar navbar-static-top">
@@ -260,7 +260,7 @@ AppAsset::register($this);
                             '<li><a href="index.php?r=supply/expirationreport"><i class="fa fa-circle-o"></i> Expiration Report</a></li>';
                         ?>
                         <li><a href="index.php?r=request/calendar"><i class="fa fa-circle-o"></i> Calendar</a></li>
-                        <li><a href="/reportico"><i class="fa fa-circle-o"></i> Generate Report</a></li>
+                        <li><a href="index.php?r=reportico"><i class="fa fa-circle-o"></i> Generate Reports</a></li>
 
                     </ul>
                 </li>
