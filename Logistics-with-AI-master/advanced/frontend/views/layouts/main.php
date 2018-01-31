@@ -262,6 +262,7 @@ AppAsset::register($this);
                         <li><a href="index.php?r=request/calendar"><i class="fa fa-circle-o"></i> Calendar</a></li>
                         <li><a href="index.php?r=reportico"><i class="fa fa-circle-o"></i> Generate Reports</a></li>
 
+
                     </ul>
                 </li>
 
@@ -356,4 +357,5 @@ AppAsset::register($this);
 </div>
 </body>
 </html>
+
 <?php $this->endPage() ?>
