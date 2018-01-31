@@ -175,7 +175,6 @@ AppAsset::register($this);
                                     }else if(Yii::$app->user->identity->user_type == 6){
                                         echo "Provincial User";
                                     }; ?>
-                                    <small>Member since April 1, 2017</small>
                                     <small>
                                         <?php
                                         $formatter = \Yii::$app->formatter;
