@@ -48,7 +48,5 @@ return [
             'ajax' => 'reportico\reportico\controllers\AjaxController',
         ]
     ],
-
-
     'params' => $params,
 ];
