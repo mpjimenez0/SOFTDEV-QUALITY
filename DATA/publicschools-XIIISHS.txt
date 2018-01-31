@@ -1,0 +1,398 @@
+Region VIII
+	Biliran
+		Almeria
+			Almeria NHS
+			Tabunan NHS
+			Western Biliran HS for Arts and Culture
+		Biliran
+			Biliran NAHS
+			Biliran Science High School
+		Cabucgayan
+			Cabucgayan NHS
+			Cabucgayan NSAT
+		Caibiran
+			ICT HS of Eastern Biliran
+			Manlabang NHS 
+		Culaba
+			Bool NHS
+			Culaba NHS
+		Kawayan
+			Kawayan NHS
+			Tucdao NHS
+		Maripipi
+			Maripipi NHS
+			Viga National High School
+		Naval*
+			Fidel Limpiado Sr. NHS
+			Lucsoon NHS
+			Naval National High School
+			Naval Night High School
+			Naval School of Fishiries
+	Eastern Samar
+		Borongan CitY
+			Benowangan NHS
+			E. Samar NHCS
+			Eastern Samar National Comprehensive HS
+			Lalawigan NHS
+			Maypangdan NHS
+			Sta. Fe NHS
+		Arteche
+			Arteche NHS
+		Balangiga
+			Southern Samar NCHS
+		Balangkayan
+			Stand Alone 1
+		Can-Avid
+			Can-Avid NHS
+		Dolores
+			Dolores NHS
+		General MacArthur
+			Gen. MacArthur NAS
+		Giporlos
+			Giporlos NTS
+		Guiuan
+			Guiuan NHS
+			Homonhon NHS
+		Hernani
+			Pedro E. Candido Memorial NHS
+		Jipapad
+			Jipapad NHS
+		Lawaan
+			Lawaan Nat'L Sch. of Crafts/HI 
+		Llorente
+			Llorente NHS 
+		Maslog
+			Maslog NHS 
+		Maydolong
+			Maydolong NHS
+		Mercedes
+			Mercedes HS
+		Oras
+			Oras National High School
+		Quinapondan
+			Quinapondan NHS
+		Salcedo
+			Matarinao SOF
+			Salcedo Vocational HS
+		San Julian
+			San Julian NHS
+		San Policarpio
+			Samar Natl Pilot Opp. Sch. of Agri.
+		Sulat
+			Sulat NHS
+		Taft
+			Taft NHS
+	Leyte
+
+
+
+		Baybay
+			Baybay City National Night HS
+			Caridad National High School
+			Ciabu National High School
+			Maihi National High School
+			Plaridel National High School
+			Pomponan National High School
+			Stand Alone 1 (Baybay NHS)
+		Abuyog
+			Abuyog National High School
+			Balocawehay National High School
+			Hampipila National High School
+			Kikilo National High School
+			Libertad Natioal High School
+		Alangalang
+			Alangalang Agro-Industrial School
+			Alangalang National High School
+			Astorga National High School
+		Albuera
+			Balugo National High School
+			Damulaan National High School
+			Dr. Geronimo B. Zaldivar MSOF
+			Seguinon National High School
+		Babatngon
+			Juan S. Tismo National High School
+			Malibago National High School
+			Pagsulhugon National High School
+			San Agustin National High School
+		Barugo
+			Barugo National High school
+			Calingcaguing National High School
+			Sta. Rosa National High School
+		Bato
+			Anahawan National High School
+			Bato National High School
+			Bato School of Fisheries
+			Buli National High School
+		Burauen
+			Burauen Comprehensive National High School
+			Burauen National High School
+			Hibunauan National High School
+		Calubian
+			Calubian National High School
+			Felix Caneja Lafuente National High School
+		Capoocan
+			Asuncion S. Melgar National High School
+			Don Mariano Salvacion Memorial National High School
+			Libertad National High School
+			Pinamopoan National High School
+		Dagami
+			Guinarona National High School
+			Patoc Natioal High School
+			Sta. Mesa National High School
+		Dulag
+			Cabacungan National High School
+			Cabatoan National High School
+			Calubian Integrated School
+			Dulag National High School
+			Rizal National High School
+			San Jose National High School
+		Hilongos
+			Bung-aw National High School
+			Concepcion National High School
+			Hilongos National Vocational School
+			Sta. Margarita National High School
+		Hindang
+			Bontoc National High School
+			Capudlosan National High School
+			Hindang National High School
+		Inopacan
+			Conalum National High School
+			Inopacan National High School
+			Marao National High School
+			Tinago National High School
+		Isabel
+			Isabel National Comprehensive School
+			Isabel National High School
+			Matlang National High School
+			PCCC St. Filomena National High School
+			San Francisco National high School
+		Jaro
+			Agapito Amado National High School
+			Bienvenido Guillera Celebre National High School
+			Granja Kalinawan NHS
+			Teofilo Macaso Memorial National High School
+		Javier
+			Javier National High School
+			Manlilisid National High School
+		Julita
+			Julita NHS
+		Kananga
+			Kananga National High School
+			Lim-ao National High School
+			Rizal National High School
+		Lapaz
+			Atty. Roque A. Marcos Memorial School
+			Buracan National High School
+			Sta. Ana National High School
+		Leyte
+			Juan V. Delantar National High School
+			Leyte Agro-Industrial School
+			Leyte National High School
+		MacArthur
+			MacArthur National High School
+		Mahaplag
+			Mahaplag National High School
+			Mahaplag National High School-Upper
+			Polahongon National High School
+		Matag-ob
+			Matag-ob National High School
+		Matalom
+			Cahagnaan National High School
+			Esperanza National High School
+			Matalom National High School
+			Sta. Paz National High School
+		Mayorga
+			Mayorga National High School
+		Merida
+			Merida Vocational School
+			Merida Vocational School Calunangan Annex
+			Merida Vocational School Puerto Bello Annex
+		Palo 
+			Palo National High School
+			Palo National High School-Pawing Annex
+			San Joaquin National High School
+		Palompon
+			Lomonon National High School
+			Taberna National High School
+			Tinabilan National High School
+			Tinabilan National High School - Palompon Annex
+		Pastrana
+			Juan Villablanca Memorial Natioal High School
+			Manaybanay National High School
+		San Isidro
+			Muertegui National High School
+			San Isidro National High School
+		San Miguel
+			San Miguel National High School
+			Sta. Cruz National High School
+		Santa Fe
+			Sta. Fe National High School
+		Tabango
+			Gibacungan National High School
+			Marcelino R. Veloso National High School
+			Pastor Salazar National High School
+			Tabango National High School
+		Tabontabon
+			Justimbaste Remandaban National High School
+		Tanaun
+			Kiling National High School
+			Tanauan National High School
+			Tanauan School of Craftsmanship and Home Industries
+		Tolosa
+			Tolosa National High School
+		Tunga
+			Gregorio C. Catenza National High School
+		Villaba 
+			Sulpa National High School
+			Villaba National Comprehensive High School
+			Villaba National High School-LNCAST
+		Ormoc
+			Cabintan NHS
+			Dolores NHS
+			Genaro B. Lureñana NHS
+			Ipil NHS
+			Julian C. Gantuangco NHS
+			Liloan NHS
+			Linao NHS
+			Margen NHS
+			Maticaa NHS
+			Pedro G. Bañez NHS
+			Rustico Capahi Sr. Memorial NHS
+			Stand Alone SHS1 (New Ormoc City NHS)
+			Stand Alone SHS2
+			Valencia NHS
+		Tacloban
+			Antonio Balmes National High School
+			Leyte National High School
+			Northern Tacloban City NHS
+			San Jose National High School
+			Scandinavian National High School
+			SHS in Tacloban City
+			SHS in V&G Subdivision, Tacloban City
+			Tacloban National Agricultural School
+	Northern Samar
+		Allen
+			Allen National HS
+			Cabacungan National HS
+		Biri
+			Biri National High School
+			San Antonio National HS
+		Bobon
+			Bobon School for PC
+			ETBM School of Fisheries
+		Capul 
+			Capul Agro-Industrial Sch.
+		Catamaran
+			Catarman NHS
+			Galutan NHS
+			Polangi NHS
+		Catubig
+			Catubig Valley NHS
+			Hibubullao NHS
+			San Vicente NHS
+		Gamay
+			Anito NHS
+			Bangon NHS
+			GaLa Vocational School
+			Gamay NHS
+		Laoang
+			Batag National HS
+			Cahayagan National HS
+			Laoang National HS
+			Laoang National Tech. HS
+			Marubay National HS
+			Oleras National HS
+			Rawis National HS
+			Vigo National HS
+		Lapinig
+			Lorenzo S. Menzon AIS
+		Las Navas
+			Dapdap National HS
+			Las Navas NHS
+			San Miguel NHS
+		Lasvares
+			BBCMAIS
+			Maravilla NHS
+		Lope de Vega
+			Lope de Vega NHS (Stand Alone)
+		Mapanas
+			Mapanas AIS
+		Mondragon
+			FDN High School
+			Leonardo M. Amigo HS
+			Mondragon AIHS
+			Nenita National HS
+		Palapag
+			Cabatuan National HS
+			Capacujan National HS
+			SAIS
+		Pambujan
+			Pambujan NHS
+			San Roque-Pambujan VHS
+			Zoilo T. Lobos NHS
+		Rosario
+			Buenavista National HS
+			Rosario National HS
+		San Antonio
+			San Antonio AVS
+		San Isidro
+			Alegria NHS
+			San Isidro AIHS
+			San Isidro NHS (SI)
+		San Jose
+			San Jose Technical HS
+		San Roque
+			Balnasan NHS
+			Bantayan NHS
+			DJFA NHS
+		San Vicente
+			Mongolbongol NHS
+			San Vicente SoF
+		Silvino Lobos
+			Silvino Lobos NHS
+		Victoria
+			Victoria NHS
+	Southern Leyte
+		Massin
+			Dongon National High School
+			Ibarra National High School
+			Libhu National High School
+			Maasin City National High School
+			Maasin Vocational High School
+			Manhilo National High School
+			Stand Alone SHS within San Rafael ES
+		Anahawan
+			Anahawan national Vocational High School
+		Bontoc
+			Bontoc National High School
+			Paku National High School
+		Hinunagan
+			Hinunangan National High School
+		Hinundayan
+			Lungsodaan National High School
+		Libangon
+			Rito Monte de Ramos Sr. Nahaong National High School
+		Liloan
+			Liloan National Technical Vocational High School
+		Limasawa
+			Limasawa National High School
+		Macrohon
+			Ichon NHS
+		Malitbog
+			Sta. Cruz National High School
+		Pintuyan
+			Pintuyan National Vocational High School
+		
+	Western Samar
+		
+
+
+
+
+
+
+
+
+
+	
+
