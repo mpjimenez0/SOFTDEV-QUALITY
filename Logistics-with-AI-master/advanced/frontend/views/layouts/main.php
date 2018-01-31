@@ -176,6 +176,12 @@ AppAsset::register($this);
                                         echo "Provincial User";
                                     }; ?>
                                     <small>Member since April 1, 2017</small>
+                                    <small>
+                                        <?php
+                                        $formatter = \Yii::$app->formatter;
+                                        echo Yii::$app->formatter->asDate('now');
+                                        //echo Yii::$app->formatter->asDate('now', 'long'); ?>
+                                    </small>
                                 </p>
                             </li>
 
@@ -228,36 +234,44 @@ AppAsset::register($this);
             <!--========================= sidebar menu: : style can be found in sidebar.less ==========================-->
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
-
-                <?php
-                if(Yii::$app->user->can('Super User') || Yii::$app->user->can('Barangay') || Yii::$app->user->can('City/Municipal') || Yii::$app->user->can('Regional') || Yii::$app->user->can('Provincial')){
-                    echo
-                    '<li class="treeview">
+                    <li class="treeview">
                         <a href="#">
                             <i class="fa fa-users"></i> <span>Users</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li class="active"><a href="index.php?r=user/nationaladmin"><i class="fa fa-circle-o"></i> National Admins</a></li>
-                            <li><a href="index.php?r=user/regionaladmin"><i class="fa fa-circle-o"></i> Regional Admins</a></li>
-                            <li><a href="index.php?r=user/citymunicipaladmin"><i class="fa fa-circle-o"></i> City/Municipal Admins </a></li>
-                            <li><a href="index.php?r=user/externaladmin"><i class="fa fa-circle-o"></i> External Users </a></li>
-                        </ul>
-                       </li>
-
-                    <li>
-                        <a href="index.php?r=warehouse">
-                            <i class="fa fa-building"></i> <span>Warehouse</span>
-                        </a>
-                     </li>'
-                    ;}
-                ?>
-
-                </li>
-                <li><a href="index.php?r=supply"><i class="fa fa-shopping-basket"></i> <span>Supply</span></a></li>
-
+                                   </span>
+                               </a>
+                               <ul class="treeview-menu">
+                                   <li class="active"><a href="index.php?r=user/nationaladmin"><i class="fa fa-circle-o"></i> National Admins</a></li>
+                                   <li><a href="index.php?r=user/regionaladmin"><i class="fa fa-circle-o"></i> Regional Admins</a></li>
+                                   <li><a href="index.php?r=user/citymunicipaladmin"><i class="fa fa-circle-o"></i> City/Municipal Admins </a></li>
+                                   <li><a href="index.php?r=user/externaladmin"><i class="fa fa-circle-o"></i> External Users </a></li>
+                               </ul>
+                            </li>
+                            <li>
+                               <a href="index.php?r=warehouse">
+                                   <i class="fa fa-building"></i> <span>Warehouse</span>
+                               </a>
+                            </li>
+                            </li>
+                            <li class="treeview">
+                               <a href="#">
+                                   <i class="fa fa-shopping-basket"></i>
+                                   <span>Items</span>
+                                   <span class="pull-right-container">
+                                       <i class="fa fa-angle-left pull-right"></i>
+                                   </span>
+                               </a>
+                               <ul class="treeview-menu">
+                                   <li><a href="index.php?r=supply/foodtype"><i class="fa fa-circle-o"></i> Food</a></li>
+                                   <li><a href="index.php?r=supply/healthtype"><i class="fa fa-circle-o"></i> Health</a></li>
+                                   <li><a href="index.php?r=supply/sheltertype"><i class="fa fa-circle-o"></i> Shelter</a></li>
+                                   <li><a href="index.php?r=supply/medicaltype"><i class="fa fa-circle-o"></i> Medical Equipment</a></li>
+                                   <li><a href="index.php?r=supply/housewaretype"><i class="fa fa-circle-o"></i> Houseware Supplies</a></li>
+                                   <li><a href="index.php?r=supply/clothingtype"><i class="fa fa-circle-o"></i> Clothings</a></li>
+                                   <li><a href="index.php?r=supply/personalhygienetype"><i class="fa fa-circle-o"></i> Personal Hygiene</a></li>
+                               </ul>
+           </li>
 
                 <li class="treeview">
                     <a href="#">
@@ -271,7 +285,7 @@ AppAsset::register($this);
                             echo
                             '<li><a href="index.php?r=supply/expirationreport"><i class="fa fa-circle-o"></i> Expiration Report</a></li>';
                         ?>
-                        <li><a href="index.php?r=request/calendar"><i class="fa fa-circle-o"></i> Calendar</a></li>
+                        <li><a href="index.php?r=request/index"><i class="fa fa-circle-o"></i> Calendar</a></li>
                         <li><a href="index.php?r=reportico"><i class="fa fa-circle-o"></i> Generate Reports</a></li>
 
 
