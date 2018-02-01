@@ -454,6 +454,7 @@ CREATE TABLE `request` (
   `vehicle_plate_number` varchar(20) DEFAULT NULL,
   `supply_code` int(11) DEFAULT NULL,
   `volunteer` int(11) DEFAULT NULL,
+
   `volunteer_occupation` varchar(255) DEFAULT NULL,
   `vehicle_type` varchar(45) DEFAULT NULL,
   `vehicle_name` varchar(255) DEFAULT NULL,
