@@ -1,0 +1,36 @@
+Project:
+1. (2014-100380) ABUEL, Ferdinand Kenneth
+2. (2015-100364) CORONEL, Sherine Jane
+3. (2014-100010) DELA CRUZ, Joey Bernadette
+4. (2015-100086) JIMENEZ, Marc Adrian
+
+
+based on: http://ocd.gov.ph/attachments/article/144/OCD_Operation_Manual_for_Response.pdf
+Purpose of a Logistical System
+    - DURING Disaster
+     1. Receives and Facilitates requests for logistical support.
+     2. Coordinates with the transport of assistance with concerned agencies
+     3. Provides feedback to requesting DRRMCs/Organizations
+     4. Institutes a tracking system of all HA/DR assistance provided including international donations for equipment and coordination.
+     5. Identifies prioritization of cargo as "must load".
+     6. Orchestrates information sharing
+     7. In coordination with member agencies, recommends the transport of food, equipment, and personnel from supply points to destination mode.
+     8. Facilitates the exchange of supply-chain information between donors, the UN, international organizations, NGOs and commercial sector.
+     9. Conducts constant gathering of official reports and significant data.
+     10. Updates assessment of roads, warehouses stocks, transportation capacities to, from, and within the affected areas.
+
+Process
+     1. 3 Days prior to a Typhoon Landfall, NDRRMC starts to meet (Pre-Disaster Risk Assessment)
+        - Logistics will provide a list of all assets and resources available on ground.
+        - Logistics will prepare a list of assets and resources that will be acquired upon commencement of response actions.
+     2. 2 Days prior to the disaster, Response clusters are activated
+         - Logistics provides available computers and office supplies to the OpCen for the Response Clusters.
+     3. Conduct a meeting to discuss the following:
+        - Inventory of assets and resources.
+        - Focal Person for Operation Centers during response operations.
+        - Requests for additional man power and funds
+    4. Pre-Disaster, the following are needed to be done:
+        1. Inventory of resources (local and national) to identify gaps.
+        2. Pre-positioning of assets/resources.
+        3. Identifying private partners
+        4. Traffic Status (Roads and Bridges, Domestic and International flights, Sea voyage and transportation, Train, Express way); ask about their suspensions.

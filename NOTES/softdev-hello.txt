@@ -1,0 +1,66 @@
+single system
+- backup (logistics will proivde)
+
+Logistics System
+ > In-charge of
+
+Forecasting for: (Supply Forecasting) -> Fixing time lag
+1. Better Shipping schedule
+2. Scheduling Production (Efficient)
+3. Reducing inventory Stockouts
+
+Dataset
+1. Location of Warehouses
+2. Location of Evacuation Sites
+
+Modules
+1. Registration --> Has to be confirmed; include the government ID** (confirm this with the government dataset)
+2. Drop Down --> Select Region --> Sorted by Class (Class A, B, C, etc); there are some cities under Class D, that doesn't have good equipment (ajax drop down -- yii2)
+3. ETA from one location to another (evacuation center to warehouse); through Google API "to ensure tht logistic requirements are moved from source to end-user at the least possible time"
+4. Reports page (Summary of Everythang)
+    - Warehouse inventory
+    - Delivery Logs (per region)
+5. Location kung san dadalhin yung gamit.
+6. Steam Guard
+
+
+Layering and Encryption --> If di nagawa, put into quality
+
+    Manila
+    Mandaluyong
+    Marikina
+    Pasig
+    Quezon City
+    San Juan
+    Caloocan
+    Malabon
+    Navotas
+    Valenzuela
+    Las Pi�as
+    Makati
+    Muntinlupa
+    Para�aque
+    Pasay
+    Pateros
+    Taguig
+
+Use Case
+Use Case Diagram
+DFD
+
+Wednesday 09:30AM - Towards the Midterm
+
+Office of Civil Defense
+
+Income Class (per Province, per region) --> http://nap.psa.gov.ph/activestats/psgc/regview.asp?region=01
+
+Links:
+    - http://ocd.gov.ph/attachments/article/144/OCD_Operation_Manual_for_Response.pdf
+    - http://digitaleducation.net/im-twg/documents/Presentations_Data_manager_workshop_130616.pdf
+    - http://www.ndrrmc.gov.ph/attachments/article/1334/NDRP_Hydro_Meteorological_Hazards_as_of_2014.pdf
+    - http://www.ndrrmc.gov.ph/attachments/article/3031/NDRP_Consequence_Management_for_Terrorism_related_Incidents.pdf
+    - http://www.responseops.ph/
+    - http://www.ndrrmc.gov.ph/attachments/article/41/NDRRM_Plan_2011-2028.pdf
+    - https://lga.gov.ph/media/uploads/2/Knowledge%20Exchange/OPERATION%20LISTO%3A%20LDRRMO%20Conference/National%20Disaster%20Response%20Plan.pdf
+    - https://www.gov.ph/disaster-information-mitigation-and-management
+    - https://waset.org/publications/10514/developing-forecasting-tool-for-humanitarian-relief-organizations-in-emergency-logistics-planning (ANLYTICS PAPER)
