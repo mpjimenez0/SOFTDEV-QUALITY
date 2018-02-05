@@ -8,6 +8,9 @@ use common\models\Barangay;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use common\models\Region;
+use common\models\Province;
+use common\models\CityMunicipal;
 
 $this->title = 'Signup';
 $this->params['breadcrumbs'][] = $this->title;
@@ -84,7 +87,35 @@ $this->params['breadcrumbs'][] = $this->title;
                             [ 'National' => 'National', 'Regional' => 'Regional', 'Municipal' => 'Municipal', 'External' => 'External'], ['prompt' => 'Select Type of the user']) ?>
                     </div>
 
+                    <div class="col-md-3">
+                        <?= $form->field($model, 'region')->dropDownList(
+                            ArrayHelper::map(Region::find()->all(), 'name', 'name'),
+                            [
+                                'prompt' => 'Select Region',
 
+                            ]);?>
+                    </div>
+
+                    <div class="col-md-3">
+                        <?= $form->field($model, 'province')->dropDownList(
+                            ArrayHelper::map(Province::find()->all(), 'name', 'name'),
+                            [
+                                'prompt' => 'Select Province',
+
+                            ]);?>
+                    </div>
+
+                    <div class="col-md-3">
+                        <?= $form->field($model, 'city_municipal')->dropDownList(
+                            ArrayHelper::map(CityMunicipal::find()->all(), 'name', 'name'),
+                            [
+                                'prompt' => 'Select City / Municipal',
+                                'onchange' => '
+                                    $.post(index.php?r=barangay/lists&id='.'"+$(this).val(), function(data){
+                                        $("select#models-contact").html(data);
+                                    });'
+                            ]);?>
+                    </div>
 
                     <div class="col-md-3">
                         <?= $form->field($model, 'barangay')->dropDownList(
@@ -94,36 +125,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
                             ]);?>
                     </div>
-
-                    <div class="col-md-3">
-                        <?= $form->field($model, 'city_municipal')->dropDownList(
-                            ArrayHelper::map(Barangay::find()->all(), 'city_municipal', 'city_municipal'),
-                            [
-                                'prompt' => 'Select City / Municipal',
-
-                            ]);?>
-                    </div>
-
-                    <div class="col-md-3">
-                        <?= $form->field($model, 'province')->dropDownList(
-                            ArrayHelper::map(Barangay::find()->all(), 'province', 'province'),
-                            [
-                                'prompt' => 'Select Province',
-
-                            ]);?>
-                    </div>
-
-                    <div class="col-md-3">
-                        <?= $form->field($model, 'region')->dropDownList(
-                            ArrayHelper::map(Barangay::find()->all(), 'region', 'region'),
-                            [
-                                'prompt' => 'Select Region',
-
-                            ]);?>
-                    </div>
-
-
-
 
                     <div class="form-group">
                         <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>

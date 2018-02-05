@@ -8,6 +8,7 @@ use common\models\BarangaySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\CityMunicipal;
 
 /**
  * BarangayController implements the CRUD actions for Barangay model.
@@ -132,5 +133,21 @@ class BarangayController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionLists($id)
+    {
+        $barangay = \common\models\Barangay::find()
+                ->where(['name' => $id])
+                ->all();
+
+                if(!empty($barangay)){
+                    foreach($barangay as $c){
+                        echo '<option value="' . $c->id . '">' . $c->barangay . '</option>';
+                    }
+
+                } else {
+                        echo "<option>-</option>"
+                }
     }
 }
