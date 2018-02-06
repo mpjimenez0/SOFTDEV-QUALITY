@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login">
     <div class="login-box">
         <div class="login-logo">
-            <img src="http://i1044.photobucket.com/albums/b444/jgtadeo/Logistics/ndrrmc_philippines_zpsg4b7xek4.png" width="120" height="90"/><br/>
+            <center><img src="http://ireport.ph/assets/images/demo/ndrrmc.png" width="223" height="149"/></center>
             <hr zize="10px"/>
             <h3><a href="index.php"><b>Logistics </b></a></h3>
         </div>
