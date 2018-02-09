@@ -31,7 +31,7 @@ AppAsset::register($this);
     <header class="main-header">
         <a href="index.php" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>L</b>M</span>
+            <span class="logo-mini"><img src="http://ireport.ph/assets/images/demo/ndrrmc.png" width="50" height="32.5"/></span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b>Logistics </b></span>
         </a>
@@ -341,7 +341,7 @@ AppAsset::register($this);
                 <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Manual</span></a></li>
 
 
-            
+
             </ul>
         </section>
         <!-- /.sidebar -->
