@@ -17,7 +17,7 @@ class SignupForm extends Model
     public $middle_name;
     public $last_name;
     public $contact;
-    public $type;
+    public $role;
     public $external_type;
     public $region_id;
     public $city_municipal_id;
@@ -59,7 +59,7 @@ class SignupForm extends Model
             ['contact', 'required'],
             ['contact', 'string', 'max' => 11],
 
-            ['type', 'required'],
+            ['role', 'required'],
 
             ['region_id', 'required'],
             ['city_municipal_id', 'required'],
@@ -79,7 +79,7 @@ class SignupForm extends Model
         if (!$this->validate()) {
             return null;
         }
-        
+
         $user = new User();
         $user->username = $this->username;
         $user->email = $this->email;
@@ -88,7 +88,7 @@ class SignupForm extends Model
         $user->middle_name = $this->middle_name;
         $user->last_name = $this->last_name;
         $user->contact = $this->contact;
-        $user->type = $this->type;
+        $user->role = $this->role;
         $user->external_type = $this->external_type;
         $user->region_id = $this->region_id;
         $user->city_municipal_id = $this->city_municipal_id;
@@ -97,7 +97,7 @@ class SignupForm extends Model
 
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        
+
         return $user->save() ? $user : null;
     }
 }

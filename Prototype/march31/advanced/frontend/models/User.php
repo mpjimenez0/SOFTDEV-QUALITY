@@ -1,4 +1,4 @@
-<?php
+role<?php
 
 namespace frontend\models;
 
@@ -21,7 +21,7 @@ use Yii;
  * @property string $middle_name
  * @property string $last_name
  * @property string $contact
- * @property string $type
+ * @property string $role
  * @property string $external_type
  * @property int $region_id
  * @property int $city_municipal_id
@@ -48,12 +48,12 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['username', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at', 'first_name', 'middle_name', 'last_name', 'contact', 'type', 'region_id', 'city_municipal_id', 'barangay_id'], 'required'],
+            [['username', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at', 'first_name', 'middle_name', 'last_name', 'contact', 'role', 'region_id', 'city_municipal_id', 'barangay_id'], 'required'],
             [['status', 'created_at', 'updated_at', 'region_id', 'city_municipal_id', 'barangay_id'], 'integer'],
             [['account_status'], 'string'],
             [['username', 'password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],
-            [['first_name', 'middle_name', 'last_name', 'type', 'external_type'], 'string', 'max' => 45],
+            [['first_name', 'middle_name', 'last_name', 'role', 'external_type'], 'string', 'max' => 45],
             [['contact'], 'string', 'max' => 11],
             [['username'], 'unique'],
             [['email'], 'unique'],

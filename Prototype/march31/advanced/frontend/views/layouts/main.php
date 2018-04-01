@@ -37,20 +37,18 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
         ['label' => 'Transport', 'url' => ['/vehicle/']],
-        ['label' => 'Cities', 'url' => ['/city-municipal/']],
-        ['label' => 'Request', 'url' => ['/request/']],
-        ['label' => 'Supplier', 'url' => ['/supplier/']],
-        ['label' => 'Location', 'url' => ['/location/']],
-        ['label' => 'Resource', 'url' => ['/resource/']],
-        ['label' => 'Barangay', 'url' => ['/barangay/']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
+        $menuItems[] = ['label' => 'Barangay', 'url' => ['/barangay/']];
+        $menuItems[] = ['label' => 'Cities', 'url' => ['/city-municipal/']];
+        $menuItems[] = ['label' => 'Request', 'url' => ['/request/']];
+        $menuItems[] = ['label' => 'Supplier', 'url' => ['/supplier/']];
+        $menuItems[] = ['label' => 'Location', 'url' => ['/location/']];
+        $menuItems[] = ['label' => 'Resource', 'url' => ['/resource/']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(

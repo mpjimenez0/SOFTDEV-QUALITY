@@ -5,49 +5,71 @@
 $this->title = 'NDRRMC Logistics System';
 ?>
 <div class="site-index">
+  <head>
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSTRDm6eRdkpoVOB2VJVJgTCNgmcuDcq0&callback=initMap">
+          </script>
+          <script>
+              function initMap() {
+                  map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 10,
+                      center: new google.maps.LatLng(14.529133, 121.021747),
+                      mapTypeId: 'roadmap'
+                  });
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+                  var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+                  var testIcon = 'http://maps.google.com/mapfiles/kml/paddle/';
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+                  var icons = {
 
-    <div class="body-content">
+                      evac: {
+                          icon: iconBase + 'ranger_station.png'
+                      },
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                      warehouse: {
+                          icon: iconBase + 'truck.png'
+                      }
+                  };
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                  var features = [
+                      {
+                          position: new google.maps.LatLng(14.529133, 121.021747),
+                          type: 'evac'
+                      },
+                      {
+                          position: new google.maps.LatLng(14.557118, 121.064908),
+                          type: 'evac'
+                      },
+                      {
+                          position: new google.maps.LatLng(14.516798, 121.021070),
+                          type: 'warehouse'
+                      },
+                      {
+                          position: new google.maps.LatLng(14.529109, 121.070576),
+                          type: 'warehouse'
+                      },
+                      {
+                          position: new google.maps.LatLng(14.121533, 121.413430),
+                          type: 'evac'
+                      },
+                      {
+                          position: new google.maps.LatLng(11.237221, 125.001089)
+                      }
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                  ];
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
+                  features.forEach(function(feature) {
+                      var marker = new google.maps.Marker({
+                          position: feature.position,
+                          icon: icons[feature.type].icon,
+                          map: map
+                      });
+                  });
+              }
+    </script>
+  </head>
+  <body onload="initMap()">
+    <div id="map" style="width: 1100px; height: 625px"></div>
+  </body>
 </div>

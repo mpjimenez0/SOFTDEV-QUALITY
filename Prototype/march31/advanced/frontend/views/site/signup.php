@@ -39,14 +39,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'contact')->textInput(['maxlength' => true]) ?>
 
-                <?= $form->field($model, 'type')->dropDownList(
+                <?= $form->field($model, 'role')->dropDownList(
                                             [
                                                 'National Admin' => 'National Admin',
                                                 'Regional Admin' => 'Regional Admin',
                                                 'Municipal Admin' => 'Municipal Admin',
                                                 'External User' => 'External User',
                                             ],
-                                            ['prompt' => 'Select User Type']
+                                            ['prompt' => 'Select User Role']
 
                 ) ?>
 
