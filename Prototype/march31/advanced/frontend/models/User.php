@@ -1,4 +1,4 @@
-role<?php
+<?php
 
 namespace frontend\models;
 

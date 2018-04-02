@@ -40,7 +40,7 @@ class Request extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'user_id', 'vehicle_id'], 'required'],
+            [['user_id', 'vehicle_id', 'date_needed', 'date_requested', 'quantity_needed', 'receipient', 'beneficiary'], 'required'],
             [['id', 'user_id', 'resource_id', 'vehicle_id'], 'integer'],
             [['reason', 'status'], 'string'],
             [['date_needed', 'date_requested', 'quantity_needed', 'priority', 'receipient', 'beneficiary'], 'string', 'max' => 45],
