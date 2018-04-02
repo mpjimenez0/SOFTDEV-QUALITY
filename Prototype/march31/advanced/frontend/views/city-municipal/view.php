@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'CityMunicipal',
-            'region_id',
+            'region.Region_Name',
         ],
     ]) ?>
 

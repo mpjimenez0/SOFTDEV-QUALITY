@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\grid\ActionColumn;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\SupplierSearch */
@@ -29,14 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'contact',
             'email:email',
-            'contact_person',
+            //'contact_person',
             //'website',
             //'barangay_id',
             //'city_municipal_id',
             //'province_id',
             //'region_id',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => ActionColumn::className(),'template'=>'{view} {update}' ],
         ],
     ]); ?>
 </div>

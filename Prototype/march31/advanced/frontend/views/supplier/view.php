@@ -2,7 +2,11 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use yii\helpers\ArrayHelper;
+use frontend\models\Region;
+use frontend\models\Province;
+use frontend\models\CityMunicipal;
+use frontend\models\Barangay;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Supplier */
 
@@ -16,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('De-activate', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -34,10 +38,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'email:email',
             'contact_person',
             'website',
-            'barangay_id',
-            'city_municipal_id',
-            'province_id',
-            'region_id',
+            'region.Region_Name',
+            'cityMunicipal.CityMunicipal',
+            'barangay.Barangay_Name',
         ],
     ]) ?>
 

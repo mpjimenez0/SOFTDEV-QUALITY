@@ -35,9 +35,18 @@ $this->params['breadcrumbs'][] = $this->title;
             'type',
             'capacity',
             'status',
-            'city_municipal_id',
-            'region_id',
-            'barangay_id',
+            [
+              'label' => 'Region',
+              'value' => $model->region->Region_Name,
+            ],
+            [
+              'label' => 'City Municipal',
+              'value' => $model->cityMunicipal->CityMunicipal,
+            ],
+            [
+              'label' => 'Barangay',
+              'value' => $model->barangay->Barangay_Name,
+            ],
         ],
     ]) ?>
 

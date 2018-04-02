@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use frontend\models\CityMunicipal;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\BarangaySearch */
@@ -27,8 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'Barangay_Name',
-            'city_municipal_id',
-
+            'cityMunicipal.CityMunicipal',
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

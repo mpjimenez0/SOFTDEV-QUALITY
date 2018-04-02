@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use frontend\models\Region;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\CityMunicipalSearch */
@@ -27,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'CityMunicipal',
-            'region_id',
+            'region.Region_Name',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
