@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\grid\ActionColumn;
+use frontend\models\User;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\SupplierSearch */
@@ -37,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'province_id',
             //'region_id',
 
-            ['class' => ActionColumn::className(),'template'=>'{view} {update}' ],
+            ['class' => ActionColumn::className(),'template'=>'{view} {delete}'],
         ],
     ]); ?>
 </div>

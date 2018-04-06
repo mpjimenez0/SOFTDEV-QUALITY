@@ -65,7 +65,23 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'remaining_supply')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'supply_category')->dropDownList([ 'Agriculture' => 'Agriculture', 'Clothing/Textile' => 'Clothing/Textile', 'Construction' => 'Construction', 'Education' => 'Education', 'Electrical/Survival' => 'Electrical/Survival', 'Food Items' => 'Food Items', 'Houseware' => 'Houseware', 'Medical' => 'Medical', 'Sleeping Gear' => 'Sleeping Gear', 'Vehicle Supplies' => 'Vehicle Supplies', 'WaSH' => 'WaSH', 'Others' => 'Others', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'supply_category')->dropDownList(
+      [
+        'Agriculture' => 'Agriculture',
+        'Clothing/Textile' => 'Clothing/Textile',
+        'Construction' => 'Construction',
+        'Education' => 'Education',
+        'Electrical/Survival' => 'Electrical/Survival',
+        'Food Items' => 'Food Items',
+        'Houseware' => 'Houseware',
+        'Medical' => 'Medical',
+        'Sleeping Gear' => 'Sleeping Gear',
+        'Vehicle Supplies' => 'Vehicle Supplies',
+        'WaSH' => 'WaSH',
+        'Others' => 'Others',
+      ],
+      ['prompt' => ''])
+     ?>
 
     <?= $form->field($model, 'supplier_id')->dropDownList(ArrayHelper::map(Supplier::find()->all(), 'id', 'name'),
                                 [
@@ -87,13 +103,11 @@ use kartik\date\DatePicker;
                                     'style' => 'width:400px',
                                     'onChange' => '
                                         $.post("index.php?r=location/lists&id='.'"+$(this).val(), function(data) {
-                                            $("select#signupform-location_id" ).html( data );
+                                            $("select#resource/_form-location_id" ).html( data );
 
                                         });'
 
-                                ]
-
-    ) ?>
+                                ]) ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

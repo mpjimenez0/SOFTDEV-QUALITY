@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 01, 2018 at 07:16 AM
+-- Generation Time: Apr 03, 2018 at 10:30 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -90,7 +90,7 @@ INSERT INTO `barangay` (`id`, `Barangay_Name`, `city_municipal_id`) VALUES
 (49, 'Santa Lucia (Kauhauhasan)', 51),
 (50, 'Radiwan', 52),
 (51, 'Salagao', 52),
-(52, 'San Vicente (Igang)', 51),
+(52, 'San Vicente (Igang)', 52),
 (53, 'Kaumbakan', 53),
 (54, 'Panatayan', 53),
 (55, 'Uvoy', 53);
@@ -168,7 +168,31 @@ INSERT INTO `city_municipal` (`id`, `CityMunicipal`, `region_id`) VALUES
 (77, 'Balete', 9),
 (78, 'Banga', 9),
 (79, 'Batan ', 9),
-(80, 'Buruanga', 9);
+(80, 'Buruanga', 9),
+(81, 'Alburquerque', 10),
+(82, 'Alicia', 10),
+(83, 'Anda', 10),
+(84, 'Antequera', 10),
+(85, 'Baclayon', 10),
+(86, 'Biliran', 11),
+(87, 'Almeria', 11),
+(88, 'Cabucgayan', 11),
+(89, 'Caibiran', 11),
+(90, 'Culaba', 11),
+(91, 'Dapitan City', 12),
+(92, 'Dipolog City', 12),
+(93, 'Katipunan', 12),
+(94, 'La Libertad', 12),
+(95, 'Liloy', 12),
+(96, 'Baungon', 13),
+(97, 'Damulog', 13),
+(98, 'Dangcagan', 13),
+(99, 'Don Carlos', 13),
+(100, 'Impasugong', 13),
+(101, 'Compostela', 14),
+(102, 'Laak (San Vicente)', 14),
+(103, 'Maco', 14),
+(104, 'Mawab', 14);
 
 -- --------------------------------------------------------
 
@@ -340,7 +364,7 @@ CREATE TABLE `user` (
   `middle_name` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `last_name` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `contact` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
-  `type` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `role` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `external_type` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `region_id` int(11) NOT NULL,
   `city_municipal_id` int(11) NOT NULL,
@@ -351,11 +375,12 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `account_status`, `first_name`, `middle_name`, `last_name`, `contact`, `type`, `external_type`, `region_id`, `city_municipal_id`, `barangay_id`) VALUES
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `account_status`, `first_name`, `middle_name`, `last_name`, `contact`, `role`, `external_type`, `region_id`, `city_municipal_id`, `barangay_id`) VALUES
 (1, 'canyouworkagainpls', 'f2u9PyPp5T1wzqGlVwnxjSLO9_OUMlOu', '$2y$13$AdHYlsMjhMDKL.SU1DymV.oJcQbOquKQ/o2ezK1aB8WF4Am6t78L2', NULL, 'pleasexd@xd.com', 10, 1521883994, 1521883994, 'Active', 'testboi', 'boitest', 'beeeee', '09876544444', 'National Admin', 'International Humanitarian Relations', 1, 16, 1),
 (2, 'ushiwaka', 'xvO6sE2p4cO2qZ8Cr-t2rtPp_lazkic2', '$2y$13$R9i/kCJB7dcU4Tv3e3c5MOLf1oq7Xi05KJDqM3ue6/Dx1Zrf7AnXe', NULL, 'asdfg@gmail.com', 10, 1521987056, 1521987056, 'Active', 'Ushijima', 'Wakatosh', 'Wakatoshi', '09876555555', 'National Admin', 'Protection', 1, 16, 1),
 (3, 'testagainbois', 'zMF1DM0pOjpCRfAPQhyZmYDJCA4LXIF0', '$2y$13$7yLN9FCOHfOTB0vatpzbx.63uDnsJwM8MKjuafrpXm7do47yr8mAS', NULL, 'testagainbois@apc.edu.ph', 10, 1522417411, 1522417411, 'Active', 'test', 'again', 'bois', '09876544444', 'National Admin', 'Camp Coordination and Camp Management', 1, 16, 2),
-(4, 'sample', 'FS2pbHlYXHu2BmWOXQmuj7Swi4vYol4u', '$2y$13$8u6bf7qE10p..zeHrNdehuEPI4hpS8yrmjdNYrU9C8qUvHZI45BOa', NULL, 'sample@sample.com', 10, 1522503137, 1522503137, 'Active', 'Sample', 'Sample', 'Sample', '09260198935', 'National Admin', NULL, 1, 16, 6);
+(4, 'sample', 'FS2pbHlYXHu2BmWOXQmuj7Swi4vYol4u', '$2y$13$8u6bf7qE10p..zeHrNdehuEPI4hpS8yrmjdNYrU9C8qUvHZI45BOa', NULL, 'sample@sample.com', 10, 1522503137, 1522503137, 'Active', 'Sample', 'Sample', 'Sample', '09260198935', 'National Admin', NULL, 1, 16, 6),
+(5, 'sample1', 'CiQUgGS-Nq0nRRiQ4yuzXRZKNMoPvSOP', '$2y$13$ad9gF33nEqXcZ8LyRY99b.QcLvi52bxO/9eFItC2TC5et7p0Y98Au', NULL, 'sample1@sample.sample', 10, 1522600821, 1522600821, 'Active', 'sample1', 'sample1', 'sample1', '12345678901', 'External User', NULL, 1, 11, 7);
 
 -- --------------------------------------------------------
 
@@ -473,13 +498,13 @@ ALTER TABLE `vehicle`
 -- AUTO_INCREMENT for table `barangay`
 --
 ALTER TABLE `barangay`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `city_municipal`
 --
 ALTER TABLE `city_municipal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
 -- AUTO_INCREMENT for table `location`
@@ -509,7 +534,7 @@ ALTER TABLE `supply`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `vehicle`

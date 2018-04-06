@@ -7,6 +7,7 @@ use kartik\date\DatePicker;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Request */
 /* @var $form yii\widgets\ActiveForm */
+
 ?>
 
 <div class="request-form">
@@ -34,7 +35,7 @@ use kartik\date\DatePicker;
             'format' => 'mm/dd/yyyy',
             'startDate' => "mm/dd/yyyy",
             'clearBtn' => true,
-        ]
+        ],
     ]); ?>
 
     <?= $form->field($model, 'reason')->textarea(['rows' => 6]) ?>

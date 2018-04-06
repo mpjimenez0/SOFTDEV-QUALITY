@@ -95,4 +95,10 @@ class Request extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Resource::className(), ['id' => 'resource_id']);
     }
+
+    public function getUserType(){
+      //Related model Class Name
+      //related column name as select
+      return $this->hasOne(User::className() ,['id' => 'user_id'])->select('type')->scalar();
+    }
 }
