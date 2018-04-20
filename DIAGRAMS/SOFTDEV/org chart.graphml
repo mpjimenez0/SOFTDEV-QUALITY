@@ -157,7 +157,7 @@
           <y:Geometry height="60.0" width="195.08556149732624" x="-721.6688172627023" y="480.54385698554256"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="190.6640625" x="2.2107494986631764" y="18.19921875">DEACTIVATE ACCOUNT<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="190.6640625" x="2.2107494986630627" y="18.19921875">DEACTIVATE ACCOUNT<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -469,7 +469,7 @@
           <y:Geometry height="60.0" width="291.5602230949196" x="492.99078668115203" y="-327.77342872449987"/>
           <y:Fill color="#000000" color2="#000000" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="25" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="34.62744140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="199.83740234375" x="45.861410375584796" y="12.686279296875">PROCUREMENT<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="25" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="34.62744140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="237.3251953125" x="27.117513891209796" y="12.686279296875">TRANSPORTATION<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
