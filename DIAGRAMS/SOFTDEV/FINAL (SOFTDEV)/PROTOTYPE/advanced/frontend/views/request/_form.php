@@ -1,0 +1,85 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use kartik\datetime\DateTimePicker;
+use yii\helpers\ArrayHelper;
+use frontend\models\Resource;
+use frontend\models\User;
+use frontend\models\Vehicle;
+
+/* @var $this yii\web\View */
+/* @var $model frontend\models\Request */
+/* @var $form yii\widgets\ActiveForm */
+
+?>
+
+<div class="request-form">
+
+    <?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'user_id')->textInput(
+      [
+        'value' => Yii::$app->user->getID(),
+        'readonly' => true,
+        'style' => 'width:400px'
+      ]
+      )?>
+    <?= $form->field($model, 'username')->textInput(
+      [
+        'value' => Yii::$app->user->getUsername(),
+        'readonly' => true,
+        'style' => 'width:400px'
+      ]
+      )?>
+
+    <?= $form->field($model, 'resource_id')->dropDownList(ArrayHelper::map(Resource::find()->all(), 'id', 'name'),
+                                [
+                                    'prompt' => 'Select Resource',
+                                    'style' => 'width:400px',
+                                ]
+    ) ?>
+
+    <?= $form->field($model, 'vehicle_id')->dropDownList(ArrayHelper::map(Vehicle::find()->all(), 'id', 'name'),
+                                [
+                                    'prompt' => 'Select Vehicle',
+                                    'style' => 'width:400px'
+                                ]
+    ) ?>
+
+    <?= $form->field($model, 'date_needed')->widget(DateTimePicker::className(), [
+        'pluginOptions' => [
+            'autoclose' => false,
+            'todayHighlight' => true,
+            'format' => 'yyyy-m-d h-i-s',
+            'clearBtn' => true
+        ]
+    ]); ?>
+
+    <?= $form->field($model, 'date_requested')->textInput(['readonly' => true, 'style' => 'width:200px']) ?>
+
+    <?= $form->field($model, 'reason')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'quantity_needed')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'priority')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'receipient')->dropDownList(ArrayHelper::map(User::find()->all(), 'id', 'username'),
+                                [
+                                    'prompt' => 'Select Recepient',
+                                    'style' => 'width:250px',
+                                ]
+    ) ?>
+
+    <?= $form->field($model, 'beneficiary')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'status')->dropDownList([ 'In Transit' => 'In Transit', 'Pending' => 'Pending', 'Delivered' => 'Delivered', 'Confirmed' => 'Confirmed', ], ['prompt' => 'Select Status']) ?>
+
+
+    <div class="form-group">
+        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+
+</div>
