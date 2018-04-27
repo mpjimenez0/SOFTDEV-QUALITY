@@ -1,0 +1,20 @@
+1st - SOFTDEV
+2nd - QUALITY
+3rd - TC-UserManagement
+4th - TC-ProcurementModule
+5th - TC-TransportModule
+6th - QUALITY-CHECKLIST
+
+
+SOFTDEV
+ colored - 1, 5, 10, 11, 14-27
+
+QUALITY
+ colored - 1, 4-5
+
+
+TC-Procurement, TransportModule, UserManagement
+ colored lahat
+
+QUALITY CHECKLIST
+ black and white lahat
